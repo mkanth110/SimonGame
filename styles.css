@@ -1,0 +1,287 @@
+body {
+  text-align: center;
+  background-color: #011F3F;
+  font-family: 'Press Start 2P', cursive;
+  padding: none;
+}
+
+button:focus {
+  outline: 0 !important;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.containerTop {
+  position: relative;
+}
+
+.row {
+  display: block;
+}
+
+/* Start Message */
+.msgContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3% 5%;
+  background-color: #DDDDDD;
+  border-radius: 20px;
+  border: 10px solid black;
+}
+
+.msgTitle {
+  padding-bottom: 3%;
+}
+
+.startBtn {
+  margin: 25px;
+  display: inline-block;
+  height: 150px;
+  width: 500px;
+  border: 10px solid black;
+  border-radius: 30px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem;
+  background-color: green;
+}
+
+/* Game div */
+#instructions {
+  font-size: 3rem;
+  margin: 5% 0 3%;
+  color: #FEF2BF;
+}
+
+/* Game buttons */
+.myButton {
+  margin: 0 2% 2%;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+  -webkit-appearance: none;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.muteBtn {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  display: inline-block;
+  height: 80px;
+  width: 300px;
+  border: 10px solid black;
+  border-radius: 20px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1rem;
+  background-color: green;
+}
+
+/* Scores */
+.hiScore {
+  color: #FEF2BF;
+}
+
+.score {
+  color: #FEF2BF;
+}
+
+/* Added classes */
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+.addMarginTop {
+  margin-top: 3% !important;
+}
+
+/* Media Queries */
+@media screen and (max-width: 749px) {
+  .startBtn {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 100px;
+    width: 300px;
+    border: 5px solid black;
+    font-size: 1.2rem;
+  }
+
+  #instructions {
+    font-size: 2.5rem;
+    margin: 15% 0 10%;
+  }
+
+  .myButton {
+    margin: 2% 1.5%;
+    height: 180px;
+    width: 180px;
+    border: 5px solid black;
+    border-radius: 20%;
+  }
+
+  .score {
+    margin-top: 5%;
+  }
+
+  .hiScore {
+    margin-top: 5%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  p {
+    font-size: 1rem;
+  }
+
+  .msgContainer {
+    position: absolute;
+    top: -8%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3% 5%;
+    background-color: #DDDDDD;
+    border-radius: 20px;
+    border: 5px solid black;
+  }
+
+  .msgTitle {
+    padding-bottom: 3%;
+    font-size: 2rem;
+    padding-top: 3%;
+  }
+
+  .startBtn {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 80px;
+    width: 300px;
+    border: 5px solid black;
+    border-radius: 20px;
+    font-size: 1.2rem;
+  }
+
+  .myButton {
+    margin: 2% 1.5%;
+    height: 130px;
+    width: 130px;
+    border: 5px solid black;
+    border-radius: 20%;
+  }
+
+  #instructions {
+    font-size: 2rem;
+    margin: 15% 0 10%;
+  }
+
+  .score {
+    font-size: 1.5rem;
+    margin-top: 5%;
+  }
+
+  .hiScore {
+    font-size: 1.5rem;
+    margin-top: 5%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  p {
+    font-size: 0.9rem;
+  }
+
+  .score {
+    font-size: 1.2rem;
+    margin-top: 5%;
+  }
+
+  .hiScore {
+    font-size: 1.2rem;
+    margin-top: 5%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .msgContainer {
+    position: absolute;
+    top: -8%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3% 5%;
+    background-color: #DDDDDD;
+    border-radius: 20px;
+    border: 5px solid black;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .msgTitle {
+    padding-bottom: 3%;
+    font-size: 1.8rem;
+  }
+
+  .startBtn {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 80px;
+    width: 200px;
+    border-radius: 15px;
+    border: 5px solid black;
+    font-size: 1rem;
+    padding-bottom: 100px;
+  }
+
+  .myButton {
+    margin: 2% 1%;
+    height: 120px;
+    width: 120px;
+    border: 5px solid black;
+    border-radius: 20%;
+  }
+
+  .score {
+    font-size: 1rem;
+    margin-top: 10%;
+  }
+
+  .hiScore {
+    font-size: 1rem;
+    margin-top: 5%;
+  }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="The Simon Game">
+  <meta name="keywords" content="Simon Says, Simon Game, Memory Game, Memory, Javascript, Game">
+  <meta name="author" content="Mohammad Kanth">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Simon Game</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <!-- Bootstrap jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- My styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="container-fluid containerTop ">
+
+    <div class="container gameContainer">
+      <h1 id="instructions">Watch!</h1>
+      <div class="row">
+        <div type="button" id="green" class="myButton green"></div>
+        <div type="button" id="red" class="myButton red"></div>
+      </div>
+      <div class="row">
+        <div type="button" id="yellow" class="myButton yellow"></div>
+        <div type="button" id="blue" class="myButton blue"></div>
+      </div>
+      <h2 class="score">Score: 0</h2>
+      <h2 class="hiScore"></h2>
+
+    </div>
+    <div class="container msgContainer">
+      <h1 class="msgTitle">The Simon Game</h1>
+      <p class="msgP1">"Watch, remember, repeat!".</p>
+      <p class="msgP2">Watch the buttons being played and repeat the sequence by pressing on the buttons in the correct order.</p>
+      <p class="msgP3">How good is your memory? Test yourself and see how long you can last in this challenging game!</p>
+      <button type="button" class="startBtn" onclick="startGame()">Game Start</button>
+    </div>
+
+  </div>
+
+<!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <!-- My Scripts -->
+  <script src="games.js" charset="utf-8"></script>
+</body>
+
+</html>
